@@ -1,2 +1,14 @@
-# snake-game
-🐍 Vanilla JavaScript Snake Game | Personal Project | Mobile-Friendly | Score Tracking  | Object-Oriented Design Principles Implemented
+
+# 🐍 JavaScript Snake Game  
+**Personal Web Development Project** | [Live Demo](#) | [Tutorial Video](https://www.youtube.com/watch?v=nKHKq4k5-hk&list=PL97U-hoyW-rU7xKQfpv5Dxx_2LLYCUGrd&index=1&pp=iAQB) 
+
+A classic Snake game built with vanilla JavaScript, featuring:  
+## Features
+- Score tracking
+- Increasing difficulty
+- Mobile-responsive touch controls
+
+🔗 **Play:** [GitHub Pages Link]  
+🎥 **Tutorial:** [YouTube Video](your-link)
+
+![Screenshot](screenshot.png)
