@@ -1,29 +1,92 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Playfair Display', serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #f0f0f0;
     margin: 0;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-h1{
+h1 {
     color: #b50b74;
-    
+    text-align: center;
+    font-size: clamp(1.5rem, 4vw, 2.5rem); /* For Responsiveness */
+    margin-bottom: 10px;
+    font-family: 'Poppins', serif;
 }
+
+strong {
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+}
+
 .game-container{
     border: 2px solid #b50b74;
     background-color: #b57a9e;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
-canvas{
+.game-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px; /* Same as your canvas width */
+    margin: 0 auto;
+    aspect-ratio: 1/1; /* Maintain square ratio */
+    border: 2px solid #b50b74;
+    background-color: #b57a9e;
+}
+
+canvas {
     display: block;
+    width: 100% !important; /* Force full container width */
+    height: 100% !important; /* Force full container height */
     background-color: #bcc0bc;
-    margin: 20px auto;
+}
 
+
+/* Responsive footer */
+.game-footer {
+    margin-top: 20px;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    max-width: 400px;
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    font-family: 'Poppins', serif;
 }
-#author{
+
+.game-footer p {
+    margin: 5px 0;
+}
+
+.author-name {
+    color: #b50b74;
     font-weight: bold;
-    color: #1709de;
 }
+
+.portfolio-link a {
+    color: #1709de;
+    text-decoration: none;
+}
+
+.portfolio-link a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

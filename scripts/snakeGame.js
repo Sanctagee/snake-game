@@ -1,10 +1,31 @@
 const user = prompt("Please, enter your name");
+// Responsive canvas setup
 const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext("2d");
 
-// To set the width and height of the canvas
-canvas.width = 400
-canvas.height = 400
+function resizeCanvas() {
+    const container = canvas.parentElement;
+    const size = Math.min(container.offsetWidth, window.innerHeight * 0.6);
+    
+    canvas.style.width = size + 'px';
+    canvas.style.height = size + 'px';
+    
+    // Set actual rendering dimensions
+    canvas.width = 400;
+    canvas.height = 400;
+    
+    // Scale the drawing context
+    const scale = size / 400;
+    ctx.scale(scale, scale);
+}
+
+
+// Initial setup
+resizeCanvas();
+window.addEventListener('resize', resizeCanvas);
+
+canvas.width = 400;
+canvas.height = 400;
 
 // Defining relevant values
 const boxSize = 20;
@@ -119,7 +140,8 @@ function checkCollision(){
         }else{
             alert(`👺Sorry ${user} try again... Your score is lessthan 100😕`)
         }
-        document.getElementById('author').innerHTML = "©௹ GabbyTech™"
+        // Auto-update copyright year
+        document.getElementById('year').textContent = new Date().getFullYear();
         clearInterval(gameLoop);
     }
 }

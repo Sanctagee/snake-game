@@ -2,8 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snake Game Tutorial</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Vanilla JavaScript Snake Game by Gabriel Chikwendu Nwofoke | Self-taught project demonstrating DOM manipulation and game logic | Portfolio piece for frontend development skills">
+    <meta name="author" content="Gabriel Chikwendu Nwofoke">
+    <meta name="keywords" content="JavaScript Game, Snake Game, Portfolio Project, Frontend Developer, Nigeria, BYU Idaho Student">
+    <meta property="og:title" content="Snake Game | Gabriel Chikwendu Nwofoke">
+    <meta property="og:description" content="Vanilla JavaScript Snake Game by Gabriel Chikwendu Nwofoke | Self-taught project demonstrating DOM manipulation and game logic | Portfolio piece for frontend development skills">
+    <meta property="og:image" content="https://github.com/Sanctagee/snake-game/blob/main/images/screenshot.png?raw=true">
+    <meta property="og:url" content="https://sanctagee.github.io/snake-game/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>JavaScript Snake Game | Gabriel Chikwendu Nwofoke - Frontend Developer</title>
     <link rel="stylesheet" href="./styles/snakeGame.css">
 </head>
 <body>
@@ -11,10 +21,14 @@
     <strong>Instruction: Use arrow keys to control the snake</strong>
     <div class="game-container">
         <canvas id="gameCanvas"></canvas>
-        <span id="author"></span>
-
     </div>
 
-    <script src="./scripts/snakeGame.js"></script>
+    <footer class="game-footer">
+        <p>Developed by <span class="author-name">Gabriel Chikwendu Nwofoke</span> • 
+            BYU Idaho Student • ©<span id="year"></span></p>
+        <p class="portfolio-link">Portfolio: <a href="https://github.com/Sanctagee" target="_blank">GabbyTech</a></p>
+    </footer>
+
+    <script src="./scripts/snakeGame.js" defer></script>
 </body>
 </html>
