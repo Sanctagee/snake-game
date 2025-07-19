@@ -11,4 +11,8 @@ A classic Snake game built with vanilla JavaScript, featuring:
 🔗 **Play:** [GitHub Pages Link]  
 🎥 **Tutorial:** [YouTube Video](your-link)
 
-![Gameplay Screenshot](./images/screenshot.png)
+![Game Preview](https://github.com/Sanctagee/snake-game/blob/main/images/screenshot.png?raw=true)
+
+## 📜 License  
+This project is licensed under the [MIT License](LICENSE).
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
